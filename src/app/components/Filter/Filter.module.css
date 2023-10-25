@@ -1,7 +1,47 @@
+.filterContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 100vh;
+    background-color: white;
+}
+.logoContainer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
 
 .logo {
+    color: #2a3570;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.filterCategoryContainer {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filterCategories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
+}
+
+.filterItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+
 }
