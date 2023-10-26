@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import styles from "./Filter.module.css";
+import { HiHome, HiArchive, HiIdentification, HiCog } from "react-icons/hi";
+import { AiFillCar } from "react-icons/ai";
 
 export default function Filter() {
     const [activeItem, setActiveItem] = useState("Dashboard");
@@ -25,6 +27,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Dashboard")}
                     >
+                        <HiHome className={styles.icon} />
                         Dashboard
                     </li>
                     <li
@@ -33,6 +36,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Orders")}
                     >
+                        <HiArchive className={styles.icon} />
                         Orders
                     </li>
                     <li
@@ -41,6 +45,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Cars")}
                     >
+                        <AiFillCar className={styles.icon} />
                         Cars
                     </li>
                     <li
@@ -49,15 +54,17 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Customers")}
                     >
+                        <HiIdentification className={styles.icon} />
                         Customers
                     </li>
                     <li
                         className={`${styles.filterItem} ${
-                            activeItem === "Reports" ? styles.active : ""
+                            activeItem === "Settings" ? styles.active : ""
                         }`}
-                        onClick={() => handleItemClick("Reports")}
+                        onClick={() => handleItemClick("Settings")}
                     >
-                        Reports
+                        <HiCog className={styles.icon} />
+                        Settings
                     </li>
                 </ul>
             </div>
