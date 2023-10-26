@@ -12,11 +12,15 @@ export default function Filter() {
         setActiveItem(category);
     };
 
+    const getIconColor = (category) => {
+        return activeItem === category ? { color: "#421af5" } : {};
+    };
+
     return (
         <main className={styles.filterContainer}>
             <div className={styles.logoContainer}>
                 <h1 className={styles.logo}>
-                    <strong>HORIZON</strong> CARS
+                    <span className={styles.logoName}>HORIZON</span> CARS
                 </h1>
             </div>
             <div className={styles.filterCategoryContainer}>
@@ -27,7 +31,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Dashboard")}
                     >
-                        <HiHome className={styles.icon} />
+                        <HiHome className={styles.icon} style={getIconColor("Dashboard")} />
                         Dashboard
                     </li>
                     <li
@@ -36,7 +40,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Orders")}
                     >
-                        <HiArchive className={styles.icon} />
+                        <HiArchive className={styles.icon} style={getIconColor("Orders")} />
                         Orders
                     </li>
                     <li
@@ -45,7 +49,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Cars")}
                     >
-                        <AiFillCar className={styles.icon} />
+                        <AiFillCar className={styles.icon} style={getIconColor("Cars")} />
                         Cars
                     </li>
                     <li
@@ -54,7 +58,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Customers")}
                     >
-                        <HiIdentification className={styles.icon} />
+                        <HiIdentification className={styles.icon} style={getIconColor("Customers")} />
                         Customers
                     </li>
                     <li
@@ -63,7 +67,7 @@ export default function Filter() {
                         }`}
                         onClick={() => handleItemClick("Settings")}
                     >
-                        <HiCog className={styles.icon} />
+                        <HiCog className={styles.icon} style={getIconColor("Settings")} />
                         Settings
                     </li>
                 </ul>

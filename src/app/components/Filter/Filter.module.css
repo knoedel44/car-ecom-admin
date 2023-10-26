@@ -23,6 +23,15 @@
     font-weight: normal;
 }
 
+.logoName {
+    font-weight: bold;
+    transition: all 0.2s linear;
+}
+
+.logoName:hover {
+    color: #421af5;
+}
+
 .filterCategoryContainer {
     width: 100%;
     display: flex;
@@ -42,7 +51,7 @@
     display: flex;
     color: rgba(128, 128, 128, 0.47);
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 500;
     align-items: center;
     transition: all 0.15s linear;
 }
