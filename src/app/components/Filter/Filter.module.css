@@ -26,7 +26,6 @@
 .filterCategoryContainer {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -44,8 +43,22 @@
     color: rgba(128, 128, 128, 0.47);
     font-size: 0.8rem;
     font-weight: 600;
+    align-items: center;
+    transition: all 0.15s linear;
 }
 
 .active {
+    color: #2a3570;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 20px;
+    transition: all 0.15s linear;
+}
+
+.filterItem:hover {
     color: #2a3570;
 }
