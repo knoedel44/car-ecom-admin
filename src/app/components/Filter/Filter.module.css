@@ -45,6 +45,10 @@
     cursor: pointer;
 }
 
+.filterCategories a {
+    text-decoration: none;
+}
+
 .filterItem {
     width: 100%;
     height: 50px;

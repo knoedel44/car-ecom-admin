@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "./Filter.module.css";
 import { HiHome, HiArchive, HiIdentification, HiCog } from "react-icons/hi";
 import { AiFillCar } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Filter() {
     const [activeItem, setActiveItem] = useState<String>("Dashboard");
@@ -25,7 +26,8 @@ export default function Filter() {
             </div>
             <div className={styles.filterCategoryContainer}>
                 <ul className={styles.filterCategories}>
-                    <li
+                    <Link
+                        href={"/"}
                         className={`${styles.filterItem} ${
                             activeItem === "Dashboard" ? styles.active : ""
                         }`}
@@ -33,8 +35,9 @@ export default function Filter() {
                     >
                         <HiHome className={styles.icon} style={getIconColor("Dashboard")} />
                         Dashboard
-                    </li>
-                    <li
+                    </Link>
+                    <Link
+                        href={"/Orders"}
                         className={`${styles.filterItem} ${
                             activeItem === "Orders" ? styles.active : ""
                         }`}
@@ -42,8 +45,9 @@ export default function Filter() {
                     >
                         <HiArchive className={styles.icon} style={getIconColor("Orders")} />
                         Orders
-                    </li>
-                    <li
+                    </Link>
+                    <Link
+                        href={"/Cars"}
                         className={`${styles.filterItem} ${
                             activeItem === "Cars" ? styles.active : ""
                         }`}
@@ -51,8 +55,9 @@ export default function Filter() {
                     >
                         <AiFillCar className={styles.icon} style={getIconColor("Cars")} />
                         Cars
-                    </li>
-                    <li
+                    </Link>
+                    <Link
+                        href={"/Customers"}
                         className={`${styles.filterItem} ${
                             activeItem === "Customers" ? styles.active : ""
                         }`}
@@ -60,8 +65,9 @@ export default function Filter() {
                     >
                         <HiIdentification className={styles.icon} style={getIconColor("Customers")} />
                         Customers
-                    </li>
-                    <li
+                    </Link>
+                    <Link
+                        href={"/Settings"}
                         className={`${styles.filterItem} ${
                             activeItem === "Settings" ? styles.active : ""
                         }`}
@@ -69,7 +75,7 @@ export default function Filter() {
                     >
                         <HiCog className={styles.icon} style={getIconColor("Settings")} />
                         Settings
-                    </li>
+                    </Link>
                 </ul>
             </div>
         </main>
