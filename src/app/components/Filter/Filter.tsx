@@ -6,13 +6,13 @@ import { HiHome, HiArchive, HiIdentification, HiCog } from "react-icons/hi";
 import { AiFillCar } from "react-icons/ai";
 
 export default function Filter() {
-    const [activeItem, setActiveItem] = useState("Dashboard");
+    const [activeItem, setActiveItem] = useState<String>("Dashboard");
 
-    const handleItemClick = (category) => {
+    const handleItemClick = (category: String) => {
         setActiveItem(category);
     };
 
-    const getIconColor = (category) => {
+    const getIconColor = (category: String) => {
         return activeItem === category ? { color: "#421af5" } : {};
     };
 
