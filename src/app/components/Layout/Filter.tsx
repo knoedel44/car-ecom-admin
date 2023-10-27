@@ -18,13 +18,13 @@ export default function Filter() {
     };
 
     return (
-        <main className={styles.filterContainer}>
+        <aside className={styles.filterContainer}>
             <div className={styles.logoContainer}>
                 <h1 className={styles.logo}>
                     <span className={styles.logoName}>HORIZON</span> CARS
                 </h1>
             </div>
-            <div className={styles.filterCategoryContainer}>
+            <nav className={styles.filterCategoryContainer}>
                 <ul className={styles.filterCategories}>
                     <Link
                         href={"/"}
@@ -77,7 +77,7 @@ export default function Filter() {
                         Settings
                     </Link>
                 </ul>
-            </div>
-        </main>
+            </nav>
+        </aside>
     );
 }
