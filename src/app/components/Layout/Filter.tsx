@@ -18,7 +18,7 @@ export default function Filter() {
     };
 
     return (
-        <aside className={styles.filterContainer}>
+        <div className={styles.filterContainer}>
             <div className={styles.logoContainer}>
                 <h1 className={styles.logo}>
                     <span className={styles.logoName}>HORIZON</span> CARS
@@ -78,6 +78,6 @@ export default function Filter() {
                     </Link>
                 </ul>
             </nav>
-        </aside>
+        </div>
     );
 }

@@ -1,9 +1,8 @@
-
-
+import styles from "../../components/Dashboard/overview/DashboardContent.module.css";
 export default function Customers() {
     return (
-        <div>
+        <main className={styles.dashboardContent}>
             <h1>Customers</h1>
-        </div>
+        </main>
     )
 }

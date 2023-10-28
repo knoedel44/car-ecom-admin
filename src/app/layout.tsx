@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${styles.pageContent}`}>
+      <body className={`${inter.className} ${styles.bodyContent}`}>
       <Filter />
       {children}
       </body>
