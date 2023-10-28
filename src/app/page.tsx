@@ -4,8 +4,6 @@ import DashboardContent from "@/app/components/Dashboard/overview/DashboardConte
 
 export default function Home() {
     return (
-        <div className={styles.pageContent}>
-            <DashboardContent/>
-        </div>
+        <DashboardContent/>
     )
 }
