@@ -1,11 +1,16 @@
-import '@/styles/globals.css'
-import {SessionProvider} from "next-auth/react"
+// _app.tsx
+import { AppProps } from 'next/app';
+import { SessionProvider, useSession } from 'next-auth/react';
+import Login from '@/app/components/Login/Login';
 
+function MyApp({ Component, pageProps }: AppProps) {
+    const { data: session } = useSession();
 
-export default function App({Component, pageProps: { session, ...pageProps}}) {
     return (
         <SessionProvider session={session}>
-            <Component {...pageProps}/>
+            {session ? <Component {...pageProps} /> : <Login />}
         </SessionProvider>
-    )
+    );
 }
+
+export default MyApp;

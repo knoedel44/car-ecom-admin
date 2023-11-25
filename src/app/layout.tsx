@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Filter from '@/app/components/Layout/Filter'
-import styles from './pages/page.module.css'
+import styles from './page.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
