@@ -1,3 +1,10 @@
 .bodyContent {
     display: flex;
 }
+
+.navigationLinks {
+    font-size: 0.8rem;
+    color: grey;
+    font-weight: normal;
+    padding-bottom: 10px;
+}

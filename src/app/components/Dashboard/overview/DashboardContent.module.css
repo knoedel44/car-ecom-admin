@@ -1,5 +1,7 @@
 .dashboardContent {
     height : 100vh;
-    background-color: #eaecf3;
+    background-color: rgba(243, 247, 255, 0.71);
     width: 100%;
+    color: #2a3570;
+    padding: 50px;
 }
