@@ -1,6 +1,5 @@
-import Filter from "@/app/components/Layout/Filter/Filter";
-import Navbar from "@/app/components/Layout/Navbar/Navbar";
-
+import Navbar from "./Navbar/Navbar";
+import Filter from "./Filter/Filter"
 export default function GlobalLayout() {
     return (
         <div>

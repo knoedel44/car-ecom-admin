@@ -1,4 +1,5 @@
 import styles from "./DashboardContent.module.css";
+import globalStyles from "../../page.module.css";
 
 export default function DashboardContent() {
     return (

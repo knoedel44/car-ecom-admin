@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../components/Dashboard/overview/DashboardContent.module.css";
-import globalStyles from "@/app/page.module.css";
+import globalStyles from "../../page.module.css";
 export default function CarOverview() {
     return (
         <div className={styles.dashboardContent}>
