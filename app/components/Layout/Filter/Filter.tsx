@@ -27,7 +27,7 @@ export default function Filter() {
             <nav className={styles.filterCategoryContainer}>
                 <ul className={styles.filterCategories}>
                     <Link
-                        href={"/"}
+                        href={"/dashboard"}
                         className={`${styles.filterItem} ${
                             activeItem === "Dashboard" ? styles.active : ""
                         }`}
@@ -37,7 +37,7 @@ export default function Filter() {
                         Dashboard
                     </Link>
                     <Link
-                        href={"/Orders"}
+                        href={"/dashboard/orders"}
                         className={`${styles.filterItem} ${
                             activeItem === "Orders" ? styles.active : ""
                         }`}
@@ -47,7 +47,7 @@ export default function Filter() {
                         Orders
                     </Link>
                     <Link
-                        href={"/Cars"}
+                        href={"/dashboard/cars"}
                         className={`${styles.filterItem} ${
                             activeItem === "Cars" ? styles.active : ""
                         }`}
@@ -57,7 +57,7 @@ export default function Filter() {
                         Cars
                     </Link>
                     <Link
-                        href={"/Customers"}
+                        href={"/dashboard/customers"}
                         className={`${styles.filterItem} ${
                             activeItem === "Customers" ? styles.active : ""
                         }`}
@@ -67,7 +67,7 @@ export default function Filter() {
                         Customers
                     </Link>
                     <Link
-                        href={"/Settings"}
+                        href={"/dashboard/settings"}
                         className={`${styles.filterItem} ${
                             activeItem === "Settings" ? styles.active : ""
                         }`}
