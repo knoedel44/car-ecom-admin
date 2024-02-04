@@ -1,6 +1,6 @@
 
-import styles from "../app/components/Dashboard/overview/DashboardContent.module.css";
-import globalStyles from "./page.module.css";
+import styles from "../components/Dashboard/overview/DashboardContent.module.css";
+import globalStyles from "../page.module.css";
 
 export default function Home() {
     return (
